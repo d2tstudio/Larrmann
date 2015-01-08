@@ -1,0 +1,36 @@
+doctype html
+html(lang="en")
+  head
+    title larrmann
+    meta(charset='UTF-8')
+    meta(content='', name='description')
+    meta(content='', name='author')
+    meta(content='3 days', name='revisit-after')
+
+    // build:css /styles/main.css
+    link(href='/styles/main.css', rel='stylesheet')
+    // endbuild
+
+  body(class=page)
+    
+    .container
+    
+      block header
+        header
+          h5 header
+
+      block user
+
+      block portfolio
+        p portfolio
+
+      block Footer
+        footer
+          p footer
+
+    // build:js /scripts/main.js
+    
+    script(src='/bower_components/jquery/dist/jquery.js')
+    
+    script(src='/scripts/main.js')
+    // endbuild
