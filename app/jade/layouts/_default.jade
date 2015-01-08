@@ -12,12 +12,32 @@ html(lang="en")
     // endbuild
 
   body(class=page)
+
+    .bg
     
     .container
     
       block header
-        header
-          h5 header
+        .header 
+          .navbar.navbar-inverse(role='navigation')
+            .container
+              .navbar-header
+                button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                  span.sr-only Toggle navigation
+                  span.icon-bar
+                  span.icon-bar
+                  span.icon-bar
+                a.navbar-brand(href='#')
+                  span.glyphicon.glyphicon-leaf
+              .navbar-collapse.collapse
+                  ul.nav.navbar-nav
+                    li
+                      a(href='#') 
+                  ul.nav.navbar-nav.navbar-right
+                    li
+                      a(href='./') 
+                        span.glyphicon.glyphicon-align-justify
+                      // /.nav-collapse
 
       block user
 
